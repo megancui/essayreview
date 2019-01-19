@@ -66,7 +66,7 @@ body {
 }
 
 .divider {
-  height: 2px;
+  height: 1px;
   background-color: white;
   opacity: .5;
   margin-top: 30px;
@@ -151,4 +151,14 @@ p {
 .tab a:hover {
   color: #d6d4de;
   transition: color .3s;
+}
+
+h2 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.services p {
+  margin: 0;
+  margin-bottom: 20px;
 }
