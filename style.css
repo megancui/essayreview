@@ -3,6 +3,7 @@ html, body {
      color: white;
      font-family: 'Roboto', sans-serif;
      font-size: 20px;
+     margin: 0;
 }
 
 body:before {
@@ -126,4 +127,28 @@ p {
 
 .first {
   margin-left: 15px;
+}
+
+.navbar {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.tab {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.tab a {
+  color: white;
+  text-decoration: none;
+}
+
+.tab a:hover {
+  color: #d6d4de;
+  transition: color .3s;
 }
