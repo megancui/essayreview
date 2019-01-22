@@ -91,7 +91,7 @@ a {
   color: #d6d4de;
 }
 
-a:hover {
+a:hover, i:hover {
   text-decoration-style: dotted;
   color: white;
   transition: color .3s;
@@ -161,4 +161,22 @@ h2 {
 .services p {
   margin: 0;
   margin-bottom: 20px;
+}
+
+#heart {
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 14px;
+}
+
+#footer {
+  text-align: center;
+  opacity: .6;
+  font-size: 14px;
+}
+
+.landing {
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
