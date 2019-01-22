@@ -4,6 +4,19 @@ html, body {
      font-family: 'Roboto', sans-serif;
      font-size: 20px;
      margin: 0;
+     width: 100%;
+}
+
+p {
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+b {
+  font-weight: 500;
 }
 
 body:before {
@@ -39,8 +52,11 @@ body {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  padding: 20px;
   scroll-snap-align: start;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
 }
 
 .mailinglist {
@@ -103,30 +119,40 @@ p {
 }
 
 .person img {
-  float: left;
-   clear: left;
   height: 150px;
   border-radius: 30px;
-  margin-right: 20px;
   margin-bottom: 20px;
+  margin-left: 20px;
+  float: right;
 }
 
 .description h3 {
   vertical-align: top;
 }
 
+.description {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
 .person {
   min-height: 200px;
+  width: 100%;
+  overflow: hidden;
+  vertical-align: top;
 }
 
 .person i {
   margin-right: 5px;
-  margin-left: 5px;
+  margin-left: 0;
   font-size: 20px;
 }
 
-.first {
-  margin-left: 15px;
+.profpic {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
 }
 
 .navbar {
@@ -163,6 +189,10 @@ h2 {
   margin-bottom: 20px;
 }
 
+.services {
+
+}
+
 #heart {
   margin-left: 2px;
   margin-right: 2px;
@@ -179,4 +209,65 @@ h2 {
   height: 100vh;
   display: flex;
   align-items: center;
+}
+
+.service {
+  width: 48%;
+  min-height: 200px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 560px) {
+  .service {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    box-sizing: border-box;
+  }
+  .service_cont {
+    display: block !important;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .title {
+    font-size: 30px;
+  }
+  p {
+    font-size: 13px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .person img {
+    float: none;
+    margin: 0;
+  }
+}
+
+.service_cont {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.down {
+  margin-top: 30px;
+  opacity: .8;
 }
