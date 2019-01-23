@@ -267,7 +267,32 @@ h2 {
   justify-content: space-between;
 }
 
+.service h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.service p {
+  margin: 0;
+}
+
 .down {
   margin-top: 30px;
   opacity: .8;
+
+}
+
+.down i {
+  animation-name: bounce;
+  animation-duration: 5s;
+}
+
+@@keyframes bounce {
+  /* 0%, 10%, 25%, 40%, 50% {transform: translateY(0);}
+    20% {transform: translateY(-20px);}
+    30% {transform: translateY(-10px);} */
+    0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
 }
