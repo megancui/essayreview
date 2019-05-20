@@ -281,10 +281,10 @@ h2 {
 
 }
 
-.down i {
+/* .down i {
   animation-name: bounce;
   animation-duration: 5s;
-}
+} */
 
 @@keyframes bounce {
   /* 0%, 10%, 25%, 40%, 50% {transform: translateY(0);}
