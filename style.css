@@ -1,14 +1,9 @@
 html, body {
      height: 100%;
      color: white;
-     font-family: 'Roboto', sans-serif;
-     font-size: 20px;
+     font-family: 'Cabin', sans-serif;
      margin: 0;
      width: 100%;
-}
-
-p {
-  font-weight: 300;
 }
 
 h3 {
@@ -16,23 +11,20 @@ h3 {
 }
 
 b {
-  font-weight: 500;
-}
-
-body:before {
-  background-image: linear-gradient(#816a9c, #3f959a);
-  background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
+  font-weight: 900;
 }
 
 body {
-  background-image: linear-gradient(#816a9c, #3f959a);
-  background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
+ background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url('bg.jpg');
+ background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
 }
 
 .center {
@@ -44,8 +36,26 @@ body {
 }
 
 .title {
-  font-family: "Bungee", sans-serif;
-  font-size: 56px;
+  font-family: "Staatliches", sans-serif;
+  font-size: 84px;
+}
+
+
+
+.gradient {
+  color: rgb(91, 192, 235);
+  background-image: linear-gradient(to right, rgb(91, 192, 235) 25%,
+  rgb(202, 255, 185) 50%, rgb(155, 197, 61));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+
+  filter: drop-shadow(2px 2px 2px #000);
+}
+
+#home i {
+  font-size: 44px;
 }
 
 .cont {
@@ -89,11 +99,24 @@ body {
   margin-bottom: 10px;
 }
 
-i:hover {
-  color: #d6d4de;
-  transition: background-color .3s;
-  transition: color .3s;
-  cursor: pointer;
+.subs {
+  line-height: 1rem;
+  font-size: 1.3rem;
+}
+
+.subs tag {
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 80%;
+  margin-right: 5px;
+}
+
+.subs tag.coke {
+  background-color: rgba(244, 0, 9, 0.5);
+}
+
+.subs tag.blue {
+  background-color: rgb(91, 192, 235, 0.5);
 }
 
 i {
@@ -102,9 +125,16 @@ i {
   margin-right: 20px;
 }
 
+img.smolboi {
+  width: 25px;
+  margin-right: 2.5px;
+  vertical-align: text-top;
+}
+
 a {
-  text-decoration-style: dotted;
-  color: #d6d4de;
+  border-bottom: 1.5px dotted;
+  text-decoration: none;
+  color: #f2f2f5;
 }
 
 a:hover, i:hover {
@@ -114,16 +144,26 @@ a:hover, i:hover {
 }
 
 p {
-  margin-top: 0px;
-  margin-bottom: 50px;
+  font-family: "Cabin", sans-serif;
+  line-height: 1.8rem;
+  font-size: 1.15rem;
+}
+
+p.focus {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+.centered {
+  text-align: center;
 }
 
 .person img {
-  height: 150px;
-  border-radius: 30px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  height: 250px;
+  border-radius: 15px;
   float: right;
+  margin-left: 30px;
+  margin-bottom: 10px;
 }
 
 .description h3 {
@@ -141,6 +181,7 @@ p {
   width: 100%;
   overflow: hidden;
   vertical-align: top;
+  margin-top: 35px;
 }
 
 .person i {
@@ -180,17 +221,16 @@ p {
 }
 
 h2 {
-  text-decoration: underline;
-  text-decoration-style: wavy;
+
+  font-size: 3rem;
+  font-family: "Staatliches", monospace;
+  filter: drop-shadow(2px 2px 2px #368caf);
+
 }
 
 .services p {
   margin: 0;
   margin-bottom: 20px;
-}
-
-.services {
-
 }
 
 #heart {
@@ -212,8 +252,8 @@ h2 {
 }
 
 .service {
-  width: 48%;
-  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -235,16 +275,16 @@ h2 {
     list-style: none;
   }
   .title {
-    font-size: 30px;
+    font-size: 33px;
   }
   p {
-    font-size: 13px;
+    font-size: 16px;
   }
   h1 {
-    font-size: 24px;
+    font-size: 27px;
   }
   h2 {
-    font-size: 22px;
+    font-size: 25px;
   }
   h3 {
     font-size: 20px;
@@ -259,16 +299,17 @@ h2 {
 }
 
 .service_cont {
-  display: flex;
+  /* display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 .service h3 {
   margin: 0;
   margin-bottom: 10px;
+  font-weight: 900;
 }
 
 .service p {
@@ -294,4 +335,22 @@ h2 {
   25%  {background-color: yellow;}
   50%  {background-color: blue;}
   100% {background-color: green;}
+}
+
+ul {
+  margin-top: 0px;
+}
+
+table {
+  margin-top: 15px;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
 }
