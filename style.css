@@ -106,9 +106,10 @@ body {
 
 .subs tag {
   border-radius: 3px;
-  padding: 5px;
+  padding: 3px;
   font-size: 80%;
-  margin-right: 5px;
+  margin-right: 3px;
+  background-color: gray;
 }
 
 .subs tag.coke {
@@ -224,7 +225,7 @@ h2 {
 
   font-size: 3rem;
   font-family: "Staatliches", monospace;
-  filter: drop-shadow(2px 2px 2px #368caf);
+  /* filter: drop-shadow(2px 2px 2px #368caf); */
 
 }
 
@@ -368,7 +369,7 @@ td {
   font-size: 1.5rem;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 2px 2px 2px 2px #111;
+  /* box-shadow: 2px 2px 2px 2px #111; */
 }
 
 #action:hover {
